@@ -1,5 +1,5 @@
 imtool close all
-clearvars -except table table2
+clearvars -except table1 table2
 
 f=gif2b(imread('match1.gif'));
 %f=gif2b(imread('match3.gif'));
@@ -49,5 +49,5 @@ for i = 1:4
 end
 table2 = table2(1:5*num2, 1:maxN2);
 
-
+diffs1 = checkDiff(table1,table2);
 

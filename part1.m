@@ -98,6 +98,8 @@ while (~terminate)
     
     if (sum(ismember(i, [2 5 10])) > 0) 
         imtool(reverse(tempX))
+        im_overlay = imoverlay(f, reverse(tempX), [1 0 0]);
+        imtool(im_overlay)
     end
     
     if X == tempX
@@ -108,3 +110,5 @@ while (~terminate)
     
 end
 imtool(reverse(X))
+im_overlay = imoverlay(f, reverse(tempX), [1 0 0]);
+imtool(im_overlay)
