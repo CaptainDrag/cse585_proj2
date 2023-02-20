@@ -1,10 +1,10 @@
 function [currX, xi, xj, yi, yj] = pollu(X, i, j)
 [M,N] = size(X);
 currX = X;
-xj = i;
-yj = j;
-xi = i;
-yi = j;
+xj = 0;
+yj = 0;
+xi = M;
+yi = N;
 untermi = true;
 temp = cell(M*N, 1);
 currTemp = 0;

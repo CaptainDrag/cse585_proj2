@@ -10,6 +10,8 @@ for i = 1:M
             [X, a, b, c, d] = pollu(X, i, j);
             item = item +1;
             rt{item,1} = originX(a:b,c:d);
+
+            
            
         end
     end
